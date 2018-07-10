@@ -13,15 +13,17 @@ module.exports.newspeed = () =>{
 
 // --
 
-const car = module.exports = {
+const car={
 
-["color"="red",
-"convertible"= true,
-"speed"= 0],
+color:'red',
+convertible : true,
+speed: 0,
+
+
 
 accelerate(speedToAdd){
 	let oldSpeed = this.speed;
-	console.log(this.speed);
+	//console.log(this.speed);
 	this.speed += speedToAdd;
 	console.log(`The speed went from ${oldSpeed} to ${this.speed}`)
 },
@@ -31,10 +33,11 @@ decelerate(speedToSubtract){
 	console.log(`The speed went from ${oldSpeed} to ${this.speed}`);
 
 }
-
+}
 
 car.accelerate(55);
 car.decelerate(10);
-car.decelereate(10);
-module.exports = car;
+car.decelerate(10);
+
+//module.exports = car;
 
